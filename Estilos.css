@@ -186,7 +186,7 @@ section{
 }
 .contenedor_section{
     width: 50%;
-    margin-left: 25%;
+    margin:15% 0% 15% 25%;
     color: white;
     background-image: url("Multimedia/logo.byn.jpg");
     background-position: center;
@@ -210,7 +210,7 @@ h2{
     font-family: 'Caveat'; 
     font-size: 45px;
     align-items: center;
-    margin-top:5%;
+    margin-top:15%;
     color: aliceblue;
     text-shadow: 2px 5px 2px rgb(139, 138, 134);
 }
@@ -531,8 +531,8 @@ filter:drop-shadow(2px 2px 5px  );
    
         
  h1{
-  font-size: 30px;
-  margin-top:10%;
+  font-size: 25px;
+  margin-top:5%;
   background: linear-gradient(to bottom,rgb(0, 0, 0),transparent);
  }
   
@@ -614,15 +614,15 @@ filter:drop-shadow(2px 2px 5px  );
         color: black;
     }
     .contenedor_form form{
-        width: 400px;
+        width: 350px;
     }
     .form_nombre input{
-        width: 300px;
+        width: 250px;
     }
     .boton_enviar input{
-        width: 350px;
+        width: 300px;
     }
     textarea{
-        width: 350px;
+        width: 300px;
     }
 } 
