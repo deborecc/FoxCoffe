@@ -1,0 +1,628 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:black;
+    
+    
+}
+.container_menu{
+max-width: 1170px;
+background-color: black;
+margin: auto;
+font-size: 18px;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+
+}
+.nav{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Caveat';
+font-size: 22px;
+
+
+
+
+}
+
+
+
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left:40px;
+}
+
+nav ul li a{
+    display: block;
+    text-transform: capitalize;
+    padding: 10px 0;
+    transition: all 0.5s ease; /*Transición para los cambios*/
+}
+nav ul li a:hover{
+    color:rgb(122, 121, 115);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(243, 238, 231);
+}
+
+.header{
+padding: 5px;
+background-color:black;
+position: fixed;
+z-index: 3;
+width: 100%;
+
+}
+/*********Logo***************/
+.logo a img{
+width: 80px;
+margin-top: 10px;
+filter:drop-shadow(2px 2px 5px  ); /*Le da brillo de fondo a la imgen*/
+}
+
+.header .nav{
+padding:10px;
+
+}
+
+
+.boton_nav{
+    height: 34px;
+    width: 44px;
+    background-color:transparent;
+    border-color: white;
+    border-radius:10%;
+    border-width:2px;
+    cursor: pointer;/*Cambia el click*/
+    display: none;
+    
+}
+
+
+.boton_nav span{ /*Dibujamos linea dentro del Botón*/
+    height: 1px;
+    width: 15px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    position: relative;
+    
+    
+}
+/*Añade elemento(span) en el Botón del nav, antes y después*/
+.boton_nav span::before,.boton_nav span::after{
+    content: " "; /*añade espacio antes y después*/
+    position: absolute;
+    left: 0;
+    top:0;
+    /*Ya definimos las medidas del SPAN más arriba, por lo que el 100%, es la medida total definida que ocupará */
+    height: 100%;
+    width: 100%;
+    background-color:white;
+}
+
+/*La función de transtaleY es posicionar un elemento según su eje, en este caso uno arriba y otro abajo de (span)*/
+.boton_nav span::before{
+    transform:translateY(-6px)
+}
+.boton_nav span::after{
+    transform:translateY(6px)
+}
+
+.banner{
+    width: 100%;
+    margin-top: 2%;
+  
+    
+}
+.contenedor_inicio{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10%;
+    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    border-radius: 1%;
+    width: 100%;
+    height: 40%;
+    font-family: 'Caveat';
+    font-size: 45px;
+    background: linear-gradient(to bottom,rgb(117, 111, 110),transparent);
+
+    
+}
+.logo_banner {
+    
+    width: 20%;
+    color:transparent;
+    margin-top:26%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+    
+    
+    
+}
+.contenedor_logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    
+}
+hr{
+    
+    border:0;
+}
+section{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    
+    
+    
+}
+.contenedor_section{
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+    background-image: url("Multimedia/logo.byn.jpg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+   
+    
+    
+}
+h2{
+  
+    font-family: 'Caveat'; 
+    font-size: 35px;
+    align-items: center;
+    text-shadow: 2px 5px 2px rgb(139, 138, 134);
+}
+#recetas p:nth-child(1){
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat'; 
+    font-size: 45px;
+    align-items: center;
+    margin-top:5%;
+    color: aliceblue;
+    text-shadow: 2px 5px 2px rgb(139, 138, 134);
+}
+#recetas p:nth-child(2){
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat'; 
+    font-size: 30px;
+    align-items: center;
+    margin-top:5%;
+    color: rgb(44, 139, 168);
+    text-shadow: 0px 2px 10px  rgb(152, 255, 83);
+    
+}
+.contenedor_section h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat'; 
+    font-size: 45px;
+    align-items: center;
+    padding: 5%;
+    text-shadow: 2px 5px 2px rgb(139, 138, 134);
+    
+    
+}
+.contenedor_section p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat'; 
+    font-size: 35px;
+    margin:5%;
+    align-items: center;
+    
+    
+   
+}
+.contenedor_section button {
+   
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(255, 255, 255);
+    font:bolder;
+    font-family: 'Caveat'; 
+    
+   
+}
+
+
+.contenedor_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap:wrap;
+    margin:10%;
+    margin-top: 5%;
+    
+}
+.cards{
+    width: 250px;
+    height: auto;
+    position: relative;
+    background-color: white;
+    color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+}
+/* Aplica a los elementos contenedores*/
+.cards > *{
+    padding: 10px;
+}
+.cards:hover{
+    background-color:rgb(113, 165, 136);
+}
+.cards .card_tittle{
+    font-size: 20px;
+    padding:20px;
+    text-transform: uppercase;
+    color:rgb(46, 49, 49);
+    font-family: 'Caveat'; 
+    text-shadow:2px 0px 2px  dimgrey;
+    
+}
+.card_image{
+    width: 150px;
+    height: 150px;
+    border:4px double rgb(77, 70, 70);
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+/*Aplico a hijos del contenedor, va en orden*/
+
+.cards:nth-child(1) .card_image{
+    background-image: url(Multimedia/caffekrema.jpg);
+}
+.cards:nth-child(2) .card_image{
+    background-image: url(Multimedia/blakc.jpg);
+}
+.cards:nth-child(3) .card_image{
+    background-image: url(Multimedia/cannela.jpg);
+}
+.cards:nth-child(4) .card_image{
+    background-image: url(Multimedia/fuerte.jpg);
+}
+.cards:nth-child(5) .card_image{
+    background-image: url(Multimedia/cortado.jpg);
+}
+.cards:nth-child(6) .card_image{
+    background-image: url(Multimedia/coffeblack.jpg.jpg);
+   
+   
+}
+.contenedor_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap:wrap;
+    margin:10%;
+    margin-top: 7%;
+    color:white;
+    
+}
+form>*{
+    padding: 20px;
+}
+.contenedor_form form{
+    width:500px;
+    height: auto;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+    border-color: rgb(92, 110, 110);
+    border-width: 2px;
+    border-style:solid;
+}
+form textarea{
+    border-width: 2px;
+    border-radius: 5px;
+   
+}
+
+.form_nombre input{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding:2px;
+    font-family: 'Caveat';
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(255, 244, 90);
+    width: 400px;
+    
+    
+}
+.boton_enviar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:2px;
+    font-family: 'Caveat';
+    border-color: white;
+    margin-top: 20px;
+    
+    
+}
+.boton_enviar input:active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.boton_enviar input{
+    width:400px;
+    padding:10px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: white;
+}
+footer{
+    color: white;
+    height: auto;
+    background-color: rgb(34, 31, 31);
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+   
+}
+.contenedor_footer{
+    display: flex;
+    padding:40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 15px;
+}
+.box_footer>*{
+    padding: 10px;
+   
+}
+.box_footer a i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.box_footer a i:hover{
+    color:rgb(255, 234, 115);
+    font-size: 30px;
+    transition: 0.4s;
+}
+.textos_footer{
+    display: flex;
+    justify-content: center;
+    max-width: 350px;
+}
+.linea_footer{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+.logo_footer img{
+width: 80px;
+filter:drop-shadow(2px 2px 5px  );
+}
+
+.derechos{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    margin:10px 10px 0px 10px;
+}
+
+/*RESPONSIVE MOBILE*/
+
+@media(max-width:991px){
+    
+   
+    .contenedor_menu{
+        display: flex;
+        width: 100%;
+       
+        
+    }
+    .conteiner{
+        display:block;
+        width: 100%;
+        
+    }
+    .nav{
+        display: none;
+        position: relative;
+        width: 100%;
+        
+    
+    }
+     /*Genero clase"active" para linkearla al archivo js y llamarla para que me oculte el menu cuando doy click en alguna opción, se linkea al responsive, y solo se aplica al tamaño establecido*/
+    .nav.active{
+        display:block;
+        
+    }
+    
+    hr{
+        color: azure;
+        border:0;
+        border-top:0.5px solid;
+        height: 0;
+       
+    }
+    .nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav ul {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .boton_nav{
+        display: block;
+        float: right;
+        margin-left: 50%;
+        
+        
+    }
+    
+     .logo a img{
+         width: 70px;
+     }
+     .logo{
+         display: flex;
+         float: left;
+         margin:0;
+        
+     }
+   
+        
+ h1{
+  font-size: 30px;
+  margin-top:10%;
+  background: linear-gradient(to bottom,rgb(0, 0, 0),transparent);
+ }
+  
+   .banner{
+       width: 100%;
+       margin-top: 18%;
+       height: auto;
+       background-color: black;
+       
+       
+      
+    
+       
+   }
+    .logo_banner{
+        
+        margin-top: 40%;
+    }
+    
+    .contenedor_section{
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-image: url("Multimedia/logo.byn.jpg");
+        background-size: 90%;
+        background-repeat: no-repeat;
+            
+           
+    }  
+    .contenedor_section p{
+     
+     padding:20px;
+     
+    }
+        
+    
+    .contenedor_section h2{
+        display: flex;
+        justify-content: center;
+        font-family: 'Caveat'; 
+        font-size: 30px;
+        align-items: center;
+        padding: 10%;
+        
+    }
+    h2 i{
+        width: 20px;
+        opacity: 0.3;
+        margin-left: 10px;
+        color: darkgreen;
+    }
+    .contenedor_section p{
+        
+        font-family: 'Caveat'; 
+        font-size: 25px;
+        margin:5%;
+        align-items: center;
+        
+        
+    }
+    .contenedor_section button {
+       
+        background-color: rgb(222, 240, 229);
+        display: flex;
+        justify-content: center;
+        width: 80px;
+        padding: 10px;
+        border-radius: 10%;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: rgb(102, 101, 101);
+        font-family: 'Caveat'; 
+       
+    }
+    .contenedor_section button a{
+        text-decoration: none;
+        color: black;
+    }
+    .contenedor_form form{
+        width: 400px;
+    }
+    .form_nombre input{
+        width: 300px;
+    }
+    .boton_enviar input{
+        width: 350px;
+    }
+    textarea{
+        width: 350px;
+    }
+} 
